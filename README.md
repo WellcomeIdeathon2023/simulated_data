@@ -38,6 +38,7 @@ Please make use of [Issues](https://github.com/WellcomeIdeathon2023/simulated_da
 ## Example
 
 See [example_challenge_area/bears_TeamWellcome_BearSandwichData_v1.R](example_challenge_area/bears_TeamWellcome_BearSandwichData_v1.R) for an example of how we expect data generation scripts to look.
+Note the mapping in the link above:
 
 * `health_challenge_area` -> `example_challenge_area`
 * `challenge` -> `bears`
