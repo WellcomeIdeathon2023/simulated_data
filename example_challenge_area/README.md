@@ -1,6 +1,6 @@
 # README
 
-No files should be uploaded to this folder, this is just used to demonstrate an example script with [teamWellcome_BearsLikeSandwiches_v1.R](example_challenge/teamWellcome_BearsLikeSandwiches_v1.R).
+No files should be uploaded to this folder, this is just used to demonstrate an example script with [TeamWellcome_BearSandwichData_v1.R](example_challenge/TeamWellcome_BearSandwichData_v1.R).
 
 And if you're interested below is the output using the `reprex` package:
 
@@ -90,41 +90,41 @@ ggplot(df, aes(x = likes_marmalade_sandwiches, color = age50, fill = bear)) +
 # run logistic regression to confirm expected results
 fit = glm(likes_marmalade_sandwiches > 0.5 ~ age + is_bear, binomial(link = "logit"))
 fit
-#> 
-#> Call:  glm(formula = likes_marmalade_sandwiches > 0.5 ~ age + is_bear, 
+#>
+#> Call:  glm(formula = likes_marmalade_sandwiches > 0.5 ~ age + is_bear,
 #>     family = binomial(link = "logit"))
-#> 
+#>
 #> Coefficients:
-#> (Intercept)          age  is_bearTRUE  
-#>    -20.7169       0.3337       1.3947  
-#> 
+#> (Intercept)          age  is_bearTRUE
+#>    -20.7169       0.3337       1.3947
+#>
 #> Degrees of Freedom: 99 Total (i.e. Null);  97 Residual
-#> Null Deviance:       84.54 
+#> Null Deviance:       84.54
 #> Residual Deviance: 43.17     AIC: 49.17
 summary(fit)
-#> 
+#>
 #> Call:
-#> glm(formula = likes_marmalade_sandwiches > 0.5 ~ age + is_bear, 
+#> glm(formula = likes_marmalade_sandwiches > 0.5 ~ age + is_bear,
 #>     family = binomial(link = "logit"))
-#> 
-#> Deviance Residuals: 
-#>      Min        1Q    Median        3Q       Max  
-#> -2.19261  -0.34190  -0.11232  -0.01942   2.10335  
-#> 
+#>
+#> Deviance Residuals:
+#>      Min        1Q    Median        3Q       Max
+#> -2.19261  -0.34190  -0.11232  -0.01942   2.10335
+#>
 #> Coefficients:
-#>              Estimate Std. Error z value Pr(>|z|)    
+#>              Estimate Std. Error z value Pr(>|z|)
 #> (Intercept) -20.71687    5.06821  -4.088 4.36e-05 ***
 #> age           0.33368    0.08528   3.913 9.12e-05 ***
-#> is_bearTRUE   1.39467    0.83271   1.675    0.094 .  
+#> is_bearTRUE   1.39467    0.83271   1.675    0.094 .
 #> ---
 #> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-#> 
+#>
 #> (Dispersion parameter for binomial family taken to be 1)
-#> 
+#>
 #>     Null deviance: 84.542  on 99  degrees of freedom
 #> Residual deviance: 43.171  on 97  degrees of freedom
 #> AIC: 49.171
-#> 
+#>
 #> Number of Fisher Scoring iterations: 7
 ```
 
