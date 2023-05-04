@@ -1,7 +1,7 @@
 # README
 
 Please make sure you have read the instructions in the [main repository README](../README.md).
-Please upload data generation scripts for the mental health challenges with one of the following formats:
+Please upload data generation scripts for the mental health challenges into this folder with one of the following formats:
 
 | Challenge | Script title format |
 |-----------|---------------------|
