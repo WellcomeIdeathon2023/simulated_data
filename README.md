@@ -3,6 +3,7 @@
 ## Data generation
 
 For all challenges during the Ideathon you are permitted to generate your own datasets for the purposes of developing, testing, and demonstrating your prototype.
+Simulated data must be completely randomly generated data and cannot be based based on any real world datasets.
 Simulated data should be generated as simple heuristics, for example draws from probability distributions.
 For all simulated data you must include a data dictionary that defines all your variables and clearly justifies any choices in data generation.
 Finally, your data generation process must be simple enough that datasets can be clearly and easily reproduced.
