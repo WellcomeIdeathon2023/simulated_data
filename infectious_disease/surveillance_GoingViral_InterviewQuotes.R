@@ -1,3 +1,10 @@
+## Generate interview quotes in simple sentences
+# sentiment_vec is a vector of sentiment words taken from the tidytext package and Bing lexicon
+# topic_vec gives some COVID related subjects 
+# institution_vec gives some community or groups that a person may be discussing
+
+# the generation is a random draw from each vector and pasted together in a sentence- not all sentences will make sense
+
 
 sentiment_vec <- tidytext::get_sentiments("bing")
 topic_vec <- c("COVID", "COVI19", "COVID-19", "vaccination", "vaccines", "infection", "isolation", "quarantine", "long COVID", "protecting my family")
